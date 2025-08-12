@@ -1,75 +1,104 @@
 body {
-    background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 960px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-
-h1 {
+header {
+    background: white;
     text-align: center;
-    color: #00796b;
+    padding: 20px;
+    border-bottom: 3px solid black;
 }
 
-form.product-form, .search-form {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+header h1 {
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+.container {
+    background: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-input, button {
-    padding: 10px;
-    font-size: 14px;
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
-    background-color: #00796b;
-    color: white;
+button, .btn {
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #004d40;
+.btn.edit {
+    background: blue;
+    color: white;
+}
+
+.btn.delete {
+    background: red;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
 }
 
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
+thead {
+    background: black;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
     text-align: center;
 }
 
-.low-stock {
-    background-color: #ffebee;
-    color: #c62828;
+tr:nth-child(even) {
+    background: #f2f2f2;
 }
 
-.inline-form input {
-    width: 80px;
-}
-
-.delete-btn {
-    margin-left: 10px;
-    color: red;
-    text-decoration: none;
-    font-weight: bold;
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
